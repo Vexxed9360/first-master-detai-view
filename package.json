@@ -8,6 +8,7 @@
     "nx": "nx",
     "start": "ng serve",
     "build": "ng build",
+    "deploy": "ng build --prod && cp ./dist/apps/mdv01/index.html ./dist/apps/mdv01/200.html && surge ./dist/apps/mdv01/ https://mdv01firstprojjie.surge.sh/",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
