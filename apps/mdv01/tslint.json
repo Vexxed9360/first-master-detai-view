@@ -1,0 +1,20 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "masterDetailView01",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "master-detail-view01",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}

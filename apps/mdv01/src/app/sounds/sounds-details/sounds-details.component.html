@@ -1,0 +1,39 @@
+<div class="col-50">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <h1>
+          {{ soundTitle }}
+        </h1>
+      </mat-card-title>
+    </mat-card-header>
+    <form (submit)="save(currentSound)">
+      <mat-card-content>
+        <mat-form-field class="w-75">
+          <input
+            matInput
+            placeholder="Title"
+            [(ngModel)]="currentSound.title"
+            type="text"
+            name="title"
+          />
+        </mat-form-field>
+        <mat-form-field class="w-75">
+          <input
+            matInput
+            placeholder="Description"
+            [(ngModel)]="currentSound.description"
+            type="text"
+            name="description"
+          />
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button type="submit" mat-button color="primary">
+          {{ submitButton }}
+        </button>
+        <button type="button" mat-button (click)="cancel()">Cancel</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>

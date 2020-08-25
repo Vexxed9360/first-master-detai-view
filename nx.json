@@ -1,0 +1,42 @@
+{
+  "npmScope": "master-detail-view01",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "ZGIxYmE3YTctNjkzZC00YzUwLWIwY2EtOGUwOWIzMzgyMWNhfHJlYWQtd3JpdGU=",
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "mdv01": {
+      "tags": []
+    },
+    "mdv01-e2e": {
+      "tags": [],
+      "implicitDependencies": ["mdv01"]
+    },
+    "core-data": {
+      "tags": []
+    },
+    "material": {
+      "tags": []
+    }
+  }
+}

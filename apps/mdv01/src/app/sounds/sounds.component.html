@@ -1,0 +1,19 @@
+<div class="container d-flex mt-3">
+  <div class="col-6">
+    <master-detail-view01-sounds-list
+      [sounds]="sounds$ | async"
+      (selectedSound)="selectSound($event)"
+      (deleteSound)="deleteSound($event)"
+    >
+    </master-detail-view01-sounds-list>
+  </div>
+
+  <div class="col-6">
+    <master-detail-view01-sounds-details
+      [selectedSound]="selectedSound"
+      (cancelSound)="cancelSound()"
+      (saveSound)="saveSound($event)"
+    >
+    </master-detail-view01-sounds-details>
+  </div>
+</div>
